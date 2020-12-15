@@ -7,6 +7,7 @@ molecool
 
 A python package for visualizing xyz files. This package is underd evelopment
 
+This code was developed at UND
 ### Copyright
 
 Copyright (c) 2020, Krishnendu Mukherjee
