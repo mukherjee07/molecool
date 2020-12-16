@@ -4,7 +4,9 @@ A python package for visualizing xyz files
 """
 
 # Add imports here
-from .functions import *
+from .functions import canvas
+from .measure import calculate_distance, calculate_angle
+from .visualize import draw_molecule, bond_histogram 
 
 # Handle versioneer
 from ._version import get_versions
