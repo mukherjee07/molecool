@@ -4,7 +4,7 @@ visualizations functions
 
 import matplotlib.pyplot as plt
 import numpy as np
-from mpl.toolkits.mplot3d import Axes3D
+from mpl_toolkits.mplot3d import Axes3D
 
 #intra-package import
 from .atom_data import atom_colors

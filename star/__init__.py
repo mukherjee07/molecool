@@ -7,6 +7,10 @@ A python package for visualizing xyz files
 from .functions import canvas
 from .measure import calculate_distance, calculate_angle
 from .visualize import draw_molecule, bond_histogram 
+from .molecule import build_bond_list, calculate_molecular_mass 
+
+#importing io package from the current directory
+from . import io
 
 # Handle versioneer
 from ._version import get_versions
