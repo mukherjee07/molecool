@@ -1,0 +1,3 @@
+
+a decorator is something you write on top of a function which gives it a special behaviour
+start test files with initial test_* in the tests folder
