@@ -2,12 +2,13 @@
 Function for annalyzing/measuring molecules
 """
 
-#intra-package import
+# intra-package import
 from .measure import calculate_distance
 from .atom_data import atomic_weights
 
+
 def build_bond_list(coordinates, max_bond=1.5, min_bond=0):
-    
+
     # Find the bonds in a molecule (set of coordinates) based on distance criteria.
     bonds = {}
     num_atoms = len(coordinates)
@@ -20,20 +21,21 @@ def build_bond_list(coordinates, max_bond=1.5, min_bond=0):
 
     return bonds
 
+
 def calculate_molecular_mass(symbols):
-   """Calculate the mass of a molecule.
-   
-   Parameters
-   ----------
-   symbols : list
-       A list of elements.
-   
-   Returns
-   -------
-   mass : float
-       The mass of the molecule
-   """
-   mass = 0
-   for atom in symbols:
-       mass += atomic_weights[atom]
-   return mass
+    """Calculate the mass of a molecule.
+
+    Parameters
+    ----------
+    symbols : list
+        A list of elements.
+
+    Returns
+    -------
+    mass : float
+        The mass of the molecule
+    """
+    mass = 0
+    for atom in symbols:
+        mass += atomic_weights[atom]
+    return mass
